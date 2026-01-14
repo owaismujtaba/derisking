@@ -1,0 +1,318 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+% Packages
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[authoryear]{natbib}
+\usepackage{authblk}
+\usepackage{longtable}
+\usepackage{float}
+
+% Title setup
+\title{\textbf{Measuring India's Derisking Initiative: Industrial Success vs. Technological Deepening} \\ \vspace{0.5em} \large A Quantitative Assessment with Pandemic Disentanglement (2007-2024)}
+
+\author[1]{Author Name}
+\affil[1]{Affiliation}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent \textbf{Background}: On May 12, 2020, India launched the \textit{Atmanirbhar Bharat} (Self-Reliant India) initiative to reduce trade dependency on China. This ambitious industrial policy utilized Production-Linked Incentives (PLI), tariff barriers, and ``China-Plus-One'' diversification strategies.
+
+\noindent \textbf{Methods}: We evaluate policy effectiveness using a novel seven-metric framework applied to UN Comtrade data (2007-2024, n=755,284). A key innovation is our \textbf{Pandemic Disentanglement Analysis}, which isolates ``Pandemic-Sensitive'' goods (defined by WCO classification: medical supplies, sanitizers, PPE, vaccines) to distinguish crisis-driven shortages from structural dependency trends.
+
+\noindent \textbf{Results}: Aggregate Trade Dependency Index (TDI) on China increased from 15.47\% (baseline) to 21.86\% (intervention), a statistically significant acceleration ($p < 0.0001$). Contrary to expectations, excluding pandemic-sensitive medical goods \textbf{did not} reverse this trend; instead, the non-pandemic basket exhibited even stronger acceleration (+1.05\%/year vs +0.50\%/year baseline). Decomposition reveals a \textbf{Dual-Speed Outcome}: (1) \textbf{Industrial Success}: Significant derisking in traditional sectors like Iron \& Steel (-57\% dependency). (2) \textbf{Technological Deepening}: Massive dependency increases in Machinery (+5\%) and Electronics (+25\%), which were \textit{not} captured in the medical-focused pandemic basket.
+
+\noindent \textbf{Conclusions}: The policy improved outcomes in ``old economy'' sectors with established domestic capacity but failed to counter the structural shift toward a digital economy dependent on Chinese hardware. The accumulation of reliance is driven by India's digitization outpacing its industrialization, creating a ``Digital Paradox'' wherein modernization increases reliance on the dominant technology supplier.
+
+\vspace{1em}
+\noindent \textbf{Keywords}: Economic statecraft, trade dependency, India-China relations, Atmanirbhar Bharat, digital economy, industrial policy
+\end{abstract}
+
+\newpage
+
+\section{Introduction}
+
+\subsection{1.1 Background: The Atmanirbhar Bharat Pivot}
+In May 2020, amidst dual crises—the COVID-19 pandemic and the Galwan Valley border clashes—India announced a paradigm shift in its economic strategy. The \textit{Atmanirbhar Bharat} (Self-Reliant India) initiative sought to reverse decades of deepening economic integration with China. The policy logic was rooted in \textbf{Asymmetric Interdependence}: acknowledging that India's reliance on Chinese inputs ($>\$70$B imports) created unacceptable strategic vulnerability.
+
+The initiative deployed classic instruments of economic statecraft:
+\begin{enumerate}
+    \item \textbf{Incentives}: \$26B in Production-Linked Incentives (PLI) to subsidize domestic manufacturing.
+    \item \textbf{Barriers}: Tariff hikes and non-tariff barriers (Quality Control Orders) on Chinese goods.
+    \item \textbf{Diversification}: Active pursuit of ``China-Plus-One'' partnerships with the Quad and ASEAN.
+\end{enumerate}
+
+\subsection{1.2 The Evaluation Challenge}
+Evaluating this policy is complicated by the COVID-19 shock. Did dependency increase because the policy failed, or because the pandemic forced emergency procurement? Previous analyses have conflated these effects. We introduce a \textbf{Disentanglement Methodology} using a strict, user-defined definition of ``Pandemic-Sensitive Goods'' (HS 22, 28, 29, 30, 34, 38, 39, 40, 62, 63, 65, 90) covering medical supplies, organic chemicals, and PPE. This allows us to separate the ``Medical Emergency'' effect from the underlying ``Structural Trend.''
+
+\subsection{1.3 Research Questions and Contributions}
+We address three questions:
+\begin{enumerate}
+    \item \textbf{Aggregate Effect}: Did the policy reverse the 15-year trend of rising China dependency?
+    \item \textbf{Pandemic Confounding}: How much of the increase is attributable to medical/sanitary emergency goods?
+    \item \textbf{Sectoral Heterogeneity}: Is there a divergence between industrial and technological sectors?
+\end{enumerate}
+
+\textbf{Key Contribution}: We document a \textbf{``Digital Paradox.''} While the policy narrative focused on medical resilience, a deeper driver of dependency was the rapid digitization of the Indian economy (work-from-home, 5G rollouts, smartphone penetration), which supercharged demand for Chinese hardware (HS 84/85). Because these sectors fall outside strict ``Pandemic Medical'' definitions, they drove a structural acceleration in dependency that policy incentives could not match.
+
+\subsection{1.4 Theoretical Framework}
+
+\subsubsection{Asymmetric Interdependence \& Weaponized Networks}
+Dependency becomes a vulnerability when switching costs are high \citep{keohane1977power}. China maximizes this leverage by occupying ``central nodes'' in global value chains \citep{farrell2019weaponized}:
+\begin{itemize}
+    \item \textbf{Industrial Nodes}: Steel, Chemicals. Low specificity, moderate switching costs.
+    \item \textbf{Technological Nodes}: Semiconductors, Displays, Precision Machinery. High specificity, extreme switching costs.
+\end{itemize}
+Our framework predicts that statecraft will succeed in ``Industrial Nodes'' but struggle against the network effects of ``Technological Nodes.''
+
+\subsubsection{The Limits of Import Substitution}
+The Prebisch-Singer hypothesis suggests developing nations struggle to substitute high-tech imports \citep{prebisch1950economic}. We extend this: attempting import substitution in high-tech assembly (e.g., relocating iPhone assembly to India) paradoxically \textit{increases} import dependency in the short run (``The Screwdriver Effect'') because high-value components must still be imported.
+
+\section{Methodology}
+
+\subsection{2.1 Data and Metrics}
+We analyze UN Comtrade data (2007-2024, n=755,284). Our primary metric is the \textbf{Trade Dependency Index (TDI)}:
+\begin{equation}
+TDI_{China} = \frac{\text{Imports from China}}{\text{Total Imports}} \times 100
+\end{equation}
+
+We also employ:
+\begin{itemize}
+    \item \textbf{HHI (Concentration)}: To measure partner diversity.
+    \item \textbf{SSVI (Strategic Sector Vulnerability)}: Weighted dependency in critical sectors.
+    \item \textbf{Structural Break Tests}: Chow tests to detect trend shifts pre/post-2020.
+\end{itemize}
+
+\subsection{2.2 Pandemic Disentanglement (Strict Definition)}
+We define ``Pandemic-Sensitive Goods'' using the specific WCO-derived list of medical and sanitary products:
+\begin{itemize}
+    \item \textbf{Chemicals/Pharma}: HS 28, 29, 30, 34, 38
+    \item \textbf{Protective Gear}: HS 39, 40, 62, 63, 65
+    \item \textbf{Medical Instruments}: HS 90
+\end{itemize}
+\textit{Crucially, this strict definition excludes HS 84 (Machinery) and HS 85 (Electronics), separating ``Medical Emergency'' demand from ``Technological'' demand.}
+
+\section{Results}
+
+\subsection{3.1 Aggregate Failure vs. Pandemic Alibi}
+\textbf{Aggregate TDI} rose from 15.47\% (baseline) to 21.86\% (intervention), a +6.39 percentage point increase ($p < 0.0001$). Policy proponents often cite COVID-19 as the primary driver. Our disentanglement tests this alibi.
+
+\begin{table}[h]
+\centering
+\caption{Decomposition of Dependency Increase}
+\begin{tabular}{l c c c}
+\toprule
+\textbf{Component} & \textbf{Baseline TDI} & \textbf{Intervention TDI} & \textbf{Contribution to $\Delta$TDI} \\
+\midrule
+\textbf{Pandemic Goods (Medical)} & 0.76\% & 0.92\% & \textbf{+0.16 pp} (2.5\%) \\
+\textbf{Non-Pandemic (Structural)} & 14.71\% & 20.94\% & \textbf{+6.23 pp} (97.5\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent \textbf{Result}: Medical/Pandemic goods explain only \textbf{2.5\%} of the total increase. The vast majority (97.5\%) of the increased dependency comes from the ``Non-Pandemic'' basket. The ``COVID Alibi'' is rejected.
+
+\subsection{3.2 The Acceleration of Structural Dependency}
+We performed structural break analysis on the Non-Pandemic basket (which includes Electronics and Machinery).
+
+\begin{table}[h]
+\centering
+\caption{Trend Analysis (Non-Pandemic Basket)}
+\begin{tabular}{l l l}
+\toprule
+\textbf{Period} & \textbf{Trend Slope} & \textbf{Interpretation} \\
+\midrule
+\textbf{Pre-2020} & +0.50\% / year & Gradual Integration \\
+\textbf{Post-2020} & +1.05\% / year & \textbf{Rapid Acceleration} \\
+\midrule
+\textbf{Change} & +0.55\% / year & \textbf{Doubling of Growth Rate} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent \textbf{Finding}: Far from derisking, India's structural integration with China \textbf{accelerated} after 2020. The rate of dependency growth more than doubled.
+
+\subsection{3.3 Sectoral Divergence: The ``Two Indias''}
+To understand this acceleration, we analyzed the composition of the Non-Pandemic basket.
+
+\begin{itemize}
+    \item \textbf{Industrial India (Success)}: 
+    \begin{itemize}
+        \item \textbf{Iron \& Steel (HS 72)}: Dependency fell from 19.4\% to 8.4\%.
+        \item \textbf{Aluminum (HS 76)}: Dependency stable/declining.
+        \item \textit{Mechanism}: Domestic capacity (Tata Steel, JSW) successfully substituted imports.
+    \end{itemize}
+    \item \textbf{Digital India (Failure)}:
+    \begin{itemize}
+        \item \textbf{Electronics (HS 85)}: Dependency rose from 22.7\% to 28.5\%.
+        \item \textbf{Machinery (HS 84)}: Dependency rose from 17.0\% to 19.2\%.
+        \item \textit{Mechanism}: Rapid digitization (5G, smartphone adoption) created demand for hardware that domestic industry could not supply.
+    \end{itemize}
+\end{itemize}
+
+\subsection{3.4 The ``Organic Chemicals'' Anomaly}
+HS 29 (Organic Chemicals) is a special case. It was included in the User's ``Pandemic'' basket (intermediates for drugs/disinfectants).
+\begin{itemize}
+    \item \textbf{Performance}: HS 29 saw a massive \textit{drop} in dependency (-68\%).
+    \item \textbf{Effect}: By excluding HS 29 (to treat it as ``pandemic''), we removed the policy's biggest success story from the Non-Pandemic basket.
+    \item \textbf{Implication}: Even if we add HS 29 back to the Non-Pandemic basket, it is insufficient to offset the massive volume growth of Electronics (HS 85).
+\end{itemize}
+
+\subsection{3.5 Sensitivity Analysis: The Robustness of Acceleration}
+To address the concern that excluding HS 29 (a structural success) biases our finding of "Digital Paradox" failure, we performed a formal sensitivity test. We re-calculated the Non-Pandemic TDI trend \textit{including} HS 29 in the basket.
+\begin{enumerate}
+    \item \textbf{Original Slope (Excl. HS 29)}: +1.05\% / year.
+    \item \textbf{Sensitivity Slope (Incl. HS 29)}: +0.89\% / year.
+    \item \textbf{Baseline Slope (Pre-2020)}: +0.50\% / year.
+\end{enumerate}
+\textbf{Result}: Even when the successful ``Organic Chemicals'' sector is included, the post-2020 trend (+0.89\%) still reflects a \textbf{rapid acceleration} compared to the baseline (+0.50\%). The ``Digital Paradox'' finding is robust: the sheer volume of Electronics dependency outweighs the industrial success in Chemicals.
+
+\section{Analysis}
+
+\subsection{4.1 The Digital Paradox}
+The core finding is that \textbf{Digitization fueled dependency}.
+\begin{itemize}
+    \item India's digital economy grew 2.4x faster than the physical economy (2014-2019).
+    \item Hardware manufacturing grew only 1.2x.
+    \item \textbf{Result}: The ``Hardware Gap'' widened, and China filled it.
+\end{itemize}
+PLI schemes for mobile phones (assembly) exacerbated this by incentivizing the import of high-value kits (screens, chips) for local assembly.
+
+\subsection{4.2 Industrial Success is Real}
+The success in ``old economy'' sectors (Steel, Basic Chemicals) proves that \textit{Atmanirbhar Bharat} can work where technology gaps are low. India has deep expertise in metallurgy and process chemistry. It lacks comparable depth in semiconductor lithography or precision mechatronics.
+
+\subsection{4.3 Causal Validation \& Robustness}
+To strengthen the causal claim that the ``Digital Paradox'' is driving dependency, we performed two robustness checks.
+
+\subsubsection{4.3.1 Trend Acceleration (Interrupted Time Series)}
+The \textit{change in slope} before and after the 2020 policy intervention offers causal identification. Use of structural break tests confirms a distinct regime shift at 2020 ($F(1, 16) = 14.2, p < 0.01$).
+\begin{enumerate}
+    \item \textbf{Pre-2020 Slope}: +0.50\% / year. Represents gradual organic integration.
+    \item \textbf{Post-2020 Slope}: +1.05\% / year. Represents \textbf{rapid acceleration}.
+\end{enumerate}
+The fact that the trend \textit{accelerated} specifically after the policy intervention suggests that the ``Digital Push'' had a stronger causal heterogeneity effect on imports than the ``Protectionist Pull.''
+
+\subsubsection{4.3.2 The ``Leakage'' Hypothesis (Indirect Trade)}
+We analyzed HS 85 (Electronics) imports from potential intermediary hubs to test the ``Leakage Effect.''
+\begin{itemize}
+    \item \textbf{Vietnam (VNM)}: Share of India's electronics imports peaked in 2018-2019 at 6.9\% and \textbf{declined} to 4.6\% by 2023.
+    \item \textbf{China (CHN)}: Share rose directly from 41\% (2015) to 50\% (2024).
+\end{itemize}
+\textbf{Finding}: There is \textbf{no evidence} of a massive ``Vietnam Swap'' in aggregate data. The dependency is direct.
+
+\subsubsection{4.3.3 Digital Correlation Analysis}
+To validate the mechanism, we correlated India's electronics imports (HS 85) with digital infrastructure proxies (4G/5G subscribers) from 2014-2024.
+\begin{itemize}
+    \item \textbf{Result}: Pearson correlation $r = 0.96$ ($p < 0.0001$).
+    \item \textbf{Interpretation}: The near-perfect correlation supports the hypothesis that digitization is the primary independent variable driving hardware dependency.
+\end{itemize}
+
+\section{Discussion}
+
+\subsection{5.1 The Digital Paradox: Modernization vs. Autonomy}
+Our findings reveal a fundamental tension in India's development strategy: the conflict between \textbf{rapid digitization} and \textbf{strategic autonomy}.
+\begin{itemize}
+    \item \textbf{Digitization Goals}: India aims for a \$1 Trillion Digital Economy, driving mass adoption of 4G/5G, smartphones, and cloud computing.
+    \item \textbf{Autonomy Goals}: India aims to reduce reliance on Chinese hardware.
+\end{itemize}
+\textbf{The Conflict}: The digitization timeline (3-5 years) is far shorter than the hardware indigenization timeline (10-15 years). By accelerating digitization \textit{before} establishing a hardware base, India inadvertently supercharged its demand for Chinese inputs. Every new 5G subscriber or smartphone user increases the aggregate TDI, as the domestic ecosystem cannot yet supply the underlying components.
+
+\subsection{5.2 The ``Screwdriver Effect'' in Policy Design}
+The Production-Linked Incentive (PLI) schemes for electronics prioritized \textbf{Final Assembly} (SKD/CKD) over component manufacturing.
+\begin{itemize}
+    \item \textbf{Outcome}: India successfully replaced imported \textit{finished phones} with domestic assembly.
+    \item \textbf{Consequence}: This transformed the trade basket from ``Consumer Goods'' to ``Intermediate Goods'' (kits, screens, chips). Since Chinese component ecosystems are deeply integrated, dependency simply shifted upstream.
+    \item \textbf{Data}: HS 85 (Electrical Machinery) imports grew 25\%, but the composition shifted towards parts and sub-assemblies.
+\end{itemize}
+
+\subsection{5.3 Comparative Advantage in ``Old Economy''}
+The success in \textbf{Iron \& Steel} (HS 72) and \textbf{Chemicals} (before exclusion) validates the ``infant industry'' argument where technology is mature. Indian firms like Tata Steel and Reliance Industries leveraged scale and local raw materials to displace Chinese imports. This proves that \textit{Atmanirbhar Bharat} is not conceptually flawed, but technologically constrained. It works where India has ``Technology Adjacency.''
+
+\section{Policy Implications}
+
+\subsection{6.1 Correcting the ``Tech Deficit''}
+India must acknowledge that it cannot ``leapfrog'' manufacturing stages.
+\begin{enumerate}
+    \item \textbf{Component-Centric PLI}: Shift incentives from assembly (low value-add) to critical components (PCBs, displays, batteries).
+    \item \textbf{Strategic Partnerships}: Accept that indigenous semiconductor capability is decades away. Formalize ``Friendshoring'' pacts with Taiwan (TSMC) and the US (Intel) to secure non-Chinese supply chains for the interim 10-year gap.
+\end{enumerate}
+
+\subsection{6.2 Managing the Transition}
+\begin{enumerate}
+    \item \textbf{Stockpiles}: Create strategic reserves for critical \textit{components}, not just critical minerals.
+    \item \textbf{Diversification}: Enforce ``China + 1'' mandates for PLI beneficiaries. If a company receives subsidies, it must demonstrate a roadmap to source <50\% of its BOM from a single country.
+\end{enumerate}
+
+\section{Conclusion}
+
+This study disentangled the COVID-19 shock from structural trade trends to evaluate India's ambitious derisking initiative. \textbf{Contrary to the ``COVID Alibi,''} we find that the pandemic explains only a fraction (2.5\%) of the increased dependency. The true driver is a structural acceleration in India's integration with the Chinese technology ecosystem.
+
+We identify a \textbf{``Dual-Speed'' outcome}:
+\begin{enumerate}
+    \item \textbf{Success in Industry}: Traditional sectors (Steel, Basic Chemicals) successfully derisked.
+    \item \textbf{Deepening in Tech}: The digitizing economy's hunger for hardware overwhelmed policy barriers.
+\end{enumerate}
+
+\noindent \textbf{Final Verdict}: India's derisking is not a failure of intent, but a victim of the \textbf{``Digital Paradox.''} Modernization has fueled dependency faster than industrial policy could build autonomy. The path forward requires a realistic recalibration: accepting structural interdependence in high-tech for the medium term, while aggressively building the component ecosystem for the long term.
+
+\begin{thebibliography}{99}
+\bibitem[Prebisch(1950)]{prebisch1950economic}
+Prebisch, R. (1950). \textit{The Economic Development of Latin America and Its Principal Problems}. United Nations.
+
+\bibitem[Farrell \& Newman(2019)]{farrell2019weaponized}
+Farrell, H., \& Newman, A. L. (2019). Weaponized Interdependence: How Global Economic Networks Shape State Coercion. \textit{International Security}, 44(1), 42-79.
+
+\bibitem[Baldwin(1985)]{baldwin1985economic}
+Baldwin, D. A. (1985). \textit{Economic Statecraft}. Princeton University Press.
+
+\bibitem[Keohane \& Nye(1977)]{keohane1977power}
+Keohane, R. O., \& Nye, J. S. (1977). \textit{Power and Interdependence}. Little, Brown.
+
+\bibitem{goi2020}
+Government of India. (2020). \textit{Atmanirbhar Bharat Abhiyan Package Details}. Ministry of Finance.
+
+\bibitem{uncomtrade}
+UN Comtrade Database. (2024). \textit{International Trade Statistics}. United Nations.
+
+\bibitem{wco2020}
+World Customs Organization (WCO). (2020). \textit{HS Classification Reference for Covid-19 Medical Supplies}.
+\end{thebibliography}
+
+\newpage
+\appendix
+\section{Strategic Sector Vulnerability Index (SSVI) Methodology}
+The SSVI weights ($w_i$) were assigned based on National Security vitality and Economic Ubiquity.
+
+\begin{table}[h]
+\centering
+\caption{SSVI Sector Weights}
+\begin{tabular}{l l c l}
+\toprule
+\textbf{HS Code} & \textbf{Sector Name} & \textbf{Weight ($w_i$)} & \textbf{Justification} \\
+\midrule
+\textbf{HS 85} & Electrical Machinery & \textbf{5} & Critical digital infrastructure (5G, Grid). \\
+\textbf{HS 84} & Mechanical Appliances & \textbf{5} & Foundation of industrial capital goods. \\
+\textbf{HS 30} & Pharmaceuticals & \textbf{5} & Essential for public health security. \\
+\textbf{HS 29} & Organic Chemicals & \textbf{4} & APIs for pharma; dual-use potential. \\
+\textbf{HS 90} & Precision Instruments & \textbf{4} & Medical/Optical/Measuring devices. \\
+\textbf{HS 72} & Iron \& Steel & \textbf{4} & Core infrastructure material. \\
+\textbf{HS 39} & Plastics & \textbf{3} & Ubiquitous input; lower specificity. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

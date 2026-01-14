@@ -1,0 +1,3 @@
+Correlation Analysis Results
+HS 85 Imports vs Digital Subscribers: r=0.9587, p=0.0000
+HS 85 Imports vs Data Usage: r=0.9540, p=0.0000

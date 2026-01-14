@@ -1,0 +1,28 @@
+{
+  "baseline_period": "2007-2019",
+  "intervention_period": "2020-2024",
+  "metrics": {
+    "TDI": {
+      "baseline": 18.012395972760075,
+      "intervention": 21.717896009232714,
+      "change": 3.705500036472639,
+      "improvement": "No"
+    },
+    "HHI": {
+      "baseline": 671.9207113811863,
+      "intervention": 736.4151553864529,
+      "change": 64.49444400526659,
+      "improvement": "No"
+    },
+    "CPODS": {
+      "value": 0.5414392375256634,
+      "interpretation": "Partial"
+    },
+    "SCRS": {
+      "baseline": 68.0,
+      "intervention": 66.0,
+      "change": -2.0,
+      "improvement": "No"
+    }
+  }
+}
