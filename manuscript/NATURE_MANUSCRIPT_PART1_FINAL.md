@@ -22,7 +22,15 @@
 
 **Methods**: We develop a novel seven-metric framework to measure derisking effectiveness using comprehensive UN Comtrade data (755,284 trade records, 2007-2024). Our methodological innovation is COVID-19 disentanglement analysis: excluding pandemic-sensitive HS codes (electronics, pharmaceuticals, medical equipment) to separate crisis-driven demand from structural policy effects. We employ rigorous statistical methods including bootstrap confidence intervals (n=1,000 iterations), independent samples t-tests, Cohen's d effect sizes, linear regression trend analysis, and Chow-style structural break tests.
 
-**Results**: Aggregate Trade Dependency Index (TDI) on China increased from 15.47% (baseline: 2007-2019) to 21.86% (intervention: 2020-2024), a statistically significant increase (t=-5.518, p<0.0001). COVID-19 disentanglement reveals that pandemic-sensitive goods account for only 0.92 percentage points of the TDI level. Critically, when excluding pandemic goods, the dependency growth trend **accelerated** from +0.50%/year (pre-2020) to +1.05%/year (post-2020), a **doubling of the growth rate** (Chow test confirms structural break). While legacy sectors (chemicals, steel) successfully derisked, the "Digital Economy" sectors (electronics, machinery) saw dependency surge, overwhelming the PLI-driven localization efforts.
+**Results**: Aggregate Trade Dependency Index (TDI) on China increased from 15.47% (baseline: 2007-2019) to 21.86% (intervention: 2020-2024), a statistically significant increase ($t=-5.518, p<0.0001$; **Figure 1**).
+
+![Figure 1: Trade Dependency Trend](figures/figure1_tdi_trend_with_ci.png)
+
+COVID-19 disentanglement reveals that pandemic-sensitive goods account for only 0.92 percentage points of the TDI level. Critically, when excluding pandemic goods, the dependency growth trend **accelerated** from +0.50%/year (pre-2020) to +1.05%/year (post-2020), a **doubling of the growth rate** (**Figure 6**).
+
+![Figure 6: The Digital Paradox - Structural Acceleration](figures/figure6_digital_paradox.png)
+
+While legacy sectors (chemicals, steel) successfully derisked, the "Digital Economy" sectors (electronics, machinery) saw dependency surge, overwhelming the PLI-driven localization efforts.
 
 **Conclusions**: India's derisking initiative faces a **"Digital Paradox"**: rapid modernization policies (digitization, 5G) are driving hardware dependency faster than industrial policies (PLI) can build domestic capacity. The result is a "Screwdriver Effect" where final assembly moves to India, but reliance on Chinese components deepens. Policy success is highly context-dependent: effective in mature technologies but counterproductive in fast-evolving tech sectors where India lacks component ecosystems. Future derisking requires shifting incentives from assembly to component manufacturing and accepting a "dual-speed" decoupling reality.
 

@@ -641,20 +641,25 @@ F = [(RSS_pooled - RSS_split) / k] / [RSS_split / (n - 2k)]
 
 **H1 (Trade Dependency Reduction): REJECTED**
 
-Contrary to the stated policy objective, India's aggregate trade dependency on China has **increased significantly** during the intervention period.
+Contrary to the stated policy objective, India's aggregate trade dependency on China has **increased significantly** during the intervention period (**Figure 1**).
+
+![Figure 1: Aggregate Trade Dependency Index (TDI) Trend (2007-2024)](figures/figure1_tdi_trend_with_ci.png)
 
 - **Baseline TDI (2007-2019)**: 15.47% (95% CI: 14.8% - 16.1%)
 - **Intervention TDI (2020-2024)**: 21.86% (95% CI: 20.1% - 23.6%)
 - **Net Change**: +6.39 percentage points
 - **Statistical Significance**: $t(21) = -5.518, p < 0.0001$
 
-The dependency trend has not reversed; it has steepened.
+The dependency trend has not reversed; it has steepened. **Figure 1** displays the full time series with bootstrap confidence intervals, visualizing the sharp structural break post-2020.
 
 ### 3.2 Diversification and Resilience
 
 **H2 (Diversification): REJECTED**
 
-The partner concentration index (HHI) worsened, indicating *less* diversity in supply sources.
+The partner concentration index (HHI) worsened, indicating *less* diversity in supply sources (**Figure 2**).
+
+![Figure 2: Partner Concentration (HHI) and Resilience Metrics](figures/figure2_all_metrics_trends.png)
+
 - **Baseline HHI**: 671.92
 - **Intervention HHI**: 736.42 (+64.5 points)
 - **Interpretation**: Imports are becoming more concentrated, primarily driven by China's growing share.
@@ -665,7 +670,9 @@ The partner concentration index (HHI) worsened, indicating *less* diversity in s
 
 ### 3.3 The Digital Paradox (Critical Finding)
 
-Our COVID-19 disentanglement analysis reveals the structural driver of this failure.
+Our COVID-19 disentanglement analysis reveals the structural driver of this failure (**Figure 6**).
+
+![Figure 6: The Digital Paradox - Structural Acceleration vs Pandemic Effects](figures/figure6_digital_paradox.png)
 
 **Pandemic vs. Structural Effects**:
 - **Total TDI Increase**: +6.39%
@@ -682,7 +689,9 @@ When excluding pandemic-sensitive goods (medical, PPE, etc.), the structural dep
 
 ### 3.4 Sector-Level Divergence
 
-We observe a "Dual-Speed" outcome:
+We observe a "Dual-Speed" outcome (**Figure 3**):
+
+![Figure 3: Strategic Sector Dependency Heatmap](figures/figure3_sector_heatmap.png)
 
 1.  **Success Cases (Legacy Industries)**:
     - **Organic Chemicals (HS 29)**: Dependency reduced (PLI effective).

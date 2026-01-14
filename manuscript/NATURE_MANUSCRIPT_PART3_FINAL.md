@@ -46,7 +46,7 @@ We identify a **"Dual-Speed" outcome**:
 1.  **Success in Industry**: Traditional sectors (Steel, Basic Chemicals) successfully derisked.
 2.  **Deepening in Tech**: The digitizing economy's hunger for hardware overwhelmed policy barriers.
 
-**Final Verdict**: India's derisking is not a failure of intent, but a victim of the **"Digital Paradox."** Modernization has fueled dependency faster than industrial policy could build autonomy. The path forward requires a realistic recalibration: accepting structural interdependence in high-tech for the medium term, while aggressively building the component ecosystem for the long term.
+**Final Verdict**: India's derisking is not a failure of intent, but a victim of the **"Digital Paradox"** (**Figure 6**). Modernization has fueled dependency faster than industrial policy could build autonomy. The path forward requires a realistic recalibration: accepting structural interdependence in high-tech for the medium term, while aggressively building the component ecosystem for the long term.
 
 ---
 
