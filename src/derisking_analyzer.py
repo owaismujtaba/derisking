@@ -12,7 +12,7 @@ from src.metrics_calculator import DeriskingMetrics
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-import pdb
+
 
 class DeriskingAnalyzer:
     """
@@ -48,7 +48,7 @@ class DeriskingAnalyzer:
         # 1. Time series analysis
         logger.info("\n[1/5] Calculating time series metrics...")
         metrics_summary = self.analyze_time_series()
-        pdb.set_trace()
+
         self._save_csv(metrics_summary, "metrics_summary.csv")
         
         # 2. Partner diversification analysis
@@ -89,7 +89,7 @@ class DeriskingAnalyzer:
                 'HHI': self.calculator.calculate_hhi(year),
                 'SCRS': self.calculator.calculate_scrs(year)
             }
-            pdb.set_trace()
+
             results.append(row)
         
         return results

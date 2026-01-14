@@ -11,8 +11,16 @@ derisking/
 ├── 📋 requirements.txt                # Python dependencies
 ├── 📋 README.md                       # Project overview
 ├── 📋 RUNNING.md                      # Quick start guide
-├── 📋 DERISKING_REPORT.md             # Full research report (387 lines)
-├── 📋 PANDAS_MIGRATION.md             # Pandas refactoring notes
+│
+├── 📁 manuscript/                     # Manuscript & Reports
+│   ├── COMPLETE_MANUSCRIPT_*.md       # Full drafts
+│   ├── NATURE_MANUSCRIPT_*.md         # Nature submission files
+│   ├── PEER_REVIEW*.md                # Peer review responses
+│   ├── DERISKING_REPORT.md            # Full research report
+│   └── ...
+│
+├── 📁 docs/                           # Documentation
+│   └── PANDAS_MIGRATION.md            # Refactoring notes
 │
 ├── 📁 src/                            # Source code
 │   ├── __init__.py

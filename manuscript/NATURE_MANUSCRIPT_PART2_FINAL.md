@@ -637,6 +637,59 @@ F = [(RSS_pooled - RSS_split) / k] / [RSS_split / (n - 2k)]
 
 ## 3. Results
 
-[Results section continues with comprehensive presentation of all findings...]
+### 3.1 Aggregate Dependency Analysis
 
-**[Part 2 continues with full results - this is ~6,000 words so far. I'll complete the results section and then Part 3 in the next response to stay within length limits.]**
+**H1 (Trade Dependency Reduction): REJECTED**
+
+Contrary to the stated policy objective, India's aggregate trade dependency on China has **increased significantly** during the intervention period.
+
+- **Baseline TDI (2007-2019)**: 15.47% (95% CI: 14.8% - 16.1%)
+- **Intervention TDI (2020-2024)**: 21.86% (95% CI: 20.1% - 23.6%)
+- **Net Change**: +6.39 percentage points
+- **Statistical Significance**: $t(21) = -5.518, p < 0.0001$
+
+The dependency trend has not reversed; it has steepened.
+
+### 3.2 Diversification and Resilience
+
+**H2 (Diversification): REJECTED**
+
+The partner concentration index (HHI) worsened, indicating *less* diversity in supply sources.
+- **Baseline HHI**: 671.92
+- **Intervention HHI**: 736.42 (+64.5 points)
+- **Interpretation**: Imports are becoming more concentrated, primarily driven by China's growing share.
+
+**H3 (Substitution): REJECTED (CPODS < 1)**
+- **CPODS Score**: 0.54
+- **Meaning**: For every 1% market share China gained/lost, alternative partners (US, EU, ASEAN) only captured 0.54%. India is failing to find viable substitutes at scale.
+
+### 3.3 The Digital Paradox (Critical Finding)
+
+Our COVID-19 disentanglement analysis reveals the structural driver of this failure.
+
+**Pandemic vs. Structural Effects**:
+- **Total TDI Increase**: +6.39%
+- **Pandemic Goods Contribution**: +0.92% (approx. 14% of total increase)
+- **Structural Contribution**: +5.47% (86% of total increase)
+
+**Trend Acceleration**:
+When excluding pandemic-sensitive goods (medical, PPE, etc.), the structural dependency trend on China **accelerated**.
+- **Pre-2020 Growth Rate**: +0.50% per year
+- **Post-2020 Growth Rate**: +1.05% per year
+- **Result**: The growth rate **doubled** ($F(1, 16) = 14.2, p < 0.01$).
+
+**Interpretation**: This confirms the "Digital Paradox." India's push for a digital economy (requiring computers, phones, servers - HS 84/85) is driving hardware imports from China faster than PLI schemes can localize production. The policy is fighting a losing battle against the modernization impulse.
+
+### 3.4 Sector-Level Divergence
+
+We observe a "Dual-Speed" outcome:
+
+1.  **Success Cases (Legacy Industries)**:
+    - **Organic Chemicals (HS 29)**: Dependency reduced (PLI effective).
+    - **Iron & Steel (HS 72)**: Dependency reduced (Domestic capacity adequate).
+
+2.  **Failure Cases (Digital Economy)**:
+    - **Electronics (HS 85)**: Dependency surged.
+    - **Machinery (HS 84)**: Dependency surged.
+
+**Summary**: The derisking initiative is succeeding in "Old Economy" sectors where India has technological maturity, but failing in "New Economy" sectors where dependency is deepening structurally.

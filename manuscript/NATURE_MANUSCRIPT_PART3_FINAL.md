@@ -40,7 +40,7 @@ India must acknowledge that it cannot "leapfrog" manufacturing stages.
 ## 7. Conclusion
 
 This study disentangled the COVID-19 shock from structural trade trends to evaluate India's ambitious derisking initiative.
-**Contrary to the "COVID Alibi,"** we find that the pandemic explains only a fraction (2.5%) of the increased dependency. The true driver is a structural acceleration in India's integration with the Chinese technology ecosystem.
+**Contrary to the "COVID Alibi,"** we find that the pandemic explains only a small portion (**14%**) of the increased dependency (+0.92 pp). The overwhelmingly dominant driver (**86%**, or +5.47 pp) is a structural acceleration in India's integration with the Chinese technology ecosystem.
 
 We identify a **"Dual-Speed" outcome**:
 1.  **Success in Industry**: Traditional sectors (Steel, Basic Chemicals) successfully derisked.

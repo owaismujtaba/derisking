@@ -12,7 +12,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-import pdb
+
 
 
 class DeriskingMetrics:
@@ -450,7 +450,7 @@ class DeriskingMetrics:
         """
         source_diversity = self._calculate_source_diversity(year)
         geographic_diversity = self._calculate_geographic_diversity(year)
-        pdb.set_trace()
+
         critical_redundancy = self._calculate_critical_redundancy(year)
         
         scrs = (w1 * source_diversity + 
@@ -516,7 +516,7 @@ class DeriskingMetrics:
         
         # Proxy: more partners = more geographic diversity
         num_partners = len(shares)
-        pdb.set_trace()
+
         return min(num_partners / 50 * 100, 100)
     
     def _calculate_critical_redundancy(self, year: int) -> float:
